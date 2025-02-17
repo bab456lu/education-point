@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Education Point</h1>
+        <p>Your Path to Knowledge</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>About Us</h2>
+            <p>EduLearn is an online platform dedicated to providing high-quality education to students worldwide.</p>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <div class="course-list">
+                <div class="course">
+                    <h3>Mathematics</h3>
+                    <p>Learn the fundamentals of mathematics from basic arithmetic to advanced calculus.</p>
+                </div>
+                <div class="course">
+                    <h3>Science</h3>
+                    <p>Explore the wonders of science, including physics, chemistry, and biology.</p>
+                </div>
+                <div class="course">
+                    <h3>Programming</h3>
+                    <p>Master programming languages like Python, JavaScript, and more.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz">
+            <h2>Interactive Quiz</h2>
+            <div id="quiz-container">
+                <p id="question"></p>
+                <button id="answer1" class="quiz-btn"></button>
+                <button id="answer2" class="quiz-btn"></button>
+                <button id="answer3" class="quiz-btn"></button>
+                <p id="result"></p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+   
+    <script src="script.js"></script>
